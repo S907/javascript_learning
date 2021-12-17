@@ -1,0 +1,2 @@
+//array declare
+//let arr=[];
