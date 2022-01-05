@@ -10,5 +10,6 @@ function sayHi(param){
 }
 // sayHi();
 // sayHi("hello");
+
 let rVal=sayHi([1,2,3,4,5]);
 console.log("rval", rVal);        
