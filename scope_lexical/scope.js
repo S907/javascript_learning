@@ -7,7 +7,7 @@ var varName= 10;
 
 
 function bn(){
-    console.log("line number 14, 10:", varName);
+    console.log("In line number 14, 20:", varName, "Value is ten");
 }
 
 
