@@ -7,7 +7,7 @@ var varName= 10;
 
 
 function bn(){
-    console.log("In line number 14, 20:", varName, "Value is ten");
+    console.log("In line number 14, 20:", varName, "It remembers its lexical scope and its parent");
 }
 
 
