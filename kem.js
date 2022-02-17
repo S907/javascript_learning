@@ -5,6 +5,8 @@
 //     script.onload=()=> callback(script);
 // }
 
+//---------------------------------------------------------------------------
+
  function loadScript(src, callback){
     let script= document.createElement('script');
     script.src= src;
