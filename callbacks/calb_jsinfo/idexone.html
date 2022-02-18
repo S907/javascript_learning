@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks Another Set of Examples</title>
+
+
+    <style>
+        h1{
+            border: 5px solid rgb(250, 250, 250);
+            color: rgb(0, 0, 0);
+            padding: 1.5rem;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 4rem;
+        }
+        body{
+            background-color: rgb(40, 64, 110);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Behold!!! Callback Functions again</h1>
+    <script>
+
+          "use strict";
+
+        function loadScript(src, callback){
+            let script = document.createElement('script');
+            script.src = src;
+            script.onload=()=>callback(script);
+            document.head.append(script);
+        }
+
+        loadScript('https://in.pinterest.com/pin/132996995226360076/',
+        script=>{
+            alert(`Cool the script that is ${script.src} is loaded`);
+            console.log("Script Loaded");
+        });
+       
+       
+    </script>
+</body>
+</html>
